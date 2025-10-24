@@ -687,7 +687,7 @@ namespace checkintegration.Controllers
            smtp.Host = "smtp.gmail.com";
            smtp.Port = 587;
            smtp.UseDefaultCredentials = false;
-           smtp.Credentials = new System.Net.NetworkCredential("jethalalgada004@gmail.com", "jethalal004"); // Enter seders User name and password  
+           smtp.Credentials = new System.Net.NetworkCredential("jethalalgada004@gmail.com", "xxxxxx"); // Enter seders User name and password  
            smtp.EnableSsl = true;
            smtp.Send(mail);
            ViewBag.Error = "Information has been sent to registered mail id";
