@@ -678,7 +678,7 @@ namespace checkintegration.Controllers
 
            MailMessage mail = new MailMessage();
            mail.To.Add(smail.EmailId);
-           mail.From = new MailAddress("jethalalgada004@gmail.com");
+           mail.From = new MailAddress("abcd@gmail.com");
            mail.Subject = "Information about your Client";
            string Body = "Client FullName :" + cmail.FirstName+" "+cmail.LastName+"\n"+"\n Client Email ID:"+cmail.EmailId+"\n"+"\nClient Gender:"+cmail.Gender+"\n"+"\nClient Phone number:"+cmail.PhoneNumber+"\n"+"\nClient Address:"+cmail.Address+" "+cmail.Pincode;
            mail.Body = Body;
