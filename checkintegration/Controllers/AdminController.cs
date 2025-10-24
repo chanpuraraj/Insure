@@ -687,13 +687,13 @@ namespace checkintegration.Controllers
            smtp.Host = "smtp.gmail.com";
            smtp.Port = 587;
            smtp.UseDefaultCredentials = false;
-           smtp.Credentials = new System.Net.NetworkCredential("abc@gmail.com", "xxxxxxxxx"); // Enter seders User name and password  
+           smtp.Credentials = new System.Net.NetworkCredential("abcd@gmail.com", "xxxxxxxxx"); // Enter seders User name and password  
            smtp.EnableSsl = true;
            smtp.Send(mail);
            ViewBag.Error = "Information has been sent to registered mail id";
 
            mail.To.Add(cmail.EmailId);
-           mail.From = new MailAddress("abc@gmail.com");
+           mail.From = new MailAddress("abcd@gmail.com");
            mail.Subject = "Information about your Surveyor";
            string info = "Surveyor FullName :" + smail.FirstName + " " + smail.LastName +"\n"+ "\n Surveyor Email ID:" + smail.EmailId + "\n"+"\nSurveyor Gender:" + smail.Gender +"\n"+ "\nSurveyor Phone number:" + smail.PhoneNumber + "\n"+"\nSurveyor Address:" + smail.Address + " " + smail.Pincode;
            mail.Body = info;
